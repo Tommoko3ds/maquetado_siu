@@ -1,22 +1,27 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import App from "./App"; // Importa el componente App que hemos estado trabajando
+import AdminAsesores from "../src/componentes/pages/Admin_asesores";
+import NavBar from "./componentes/pages/Header";
+import Sidebar from "./componentes/pages/Sidebar";
+import CardInfo from "./componentes/pages/estudiantes_docentes";
+import AdminDocumentos from "./componentes/pages/Admin_documentos";
+import DireccionDash from "./componentes/pages/Direccion";
 
-const App = () => {
-    return (
-        <div className="flex flex-col items-start justify-center h-screen p-8">
-            <h1 className="text-3xl font-bold text-gray-800">Bienvenido (Dirección)</h1>
-            <div className=''>
-            <br>
-            </br>
-            <br>
-            </br>
-            <br>
-            </br>
-            <div className="bg-gray-100 rounded-lg shadow-lg p-12 mt-8">
-                <h2 className="text-xl font-semibold text-gray-800">Reportes</h2>
-                </div>
-            </div>
-        </div>
-    );
+
+const AppRouter = () => {
+  return (
+    <Router>
+    
+      <Routes>
+        <Route exact path="/adminasesores" element={<AdminAsesores />} />
+        <Route exact path="/admindocumentos" element={<AdminDocumentos />} />
+        <Route exact path="/asesoresEstudiantes" element={<CardInfo />} />
+        <Route exact path="/direccionDash" element={<DireccionDash />} />
+        <Route exact path="/" element={<App />} /> {/* Agrega esta línea para el componente App */}
+      </Routes>
+    </Router>
+  );
 };
 
-export default App;
+export default AppRouter;
