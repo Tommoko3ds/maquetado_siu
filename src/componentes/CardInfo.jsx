@@ -3,19 +3,19 @@ import React from 'react';
 
 const CardInfo = ({ selectedCard }) => {
   return (
-    <div className="p-4 ml-20 mb-10 mr-10 bg-gray-100 flex-1">
+    <div className="flex-1 p-4">
       {selectedCard ? (
-        <div>
-          <h2 className="text-xl font-bold mb-4">{selectedCard.title}</h2>
+        <div className="bg-white p-4 border border-black">
+          <h2 className="text-xl font-bold mb-2">{selectedCard.title}</h2>
           <p>{selectedCard.description}</p>
-          {/* Agrega más detalles según tus necesidades */}
         </div>
       ) : (
-        <p>Selecciona una card en la barra lateral</p>
+        <p className="italic text-gray-500">Selecciona el asesor para revisar detalles</p>
       )}
     </div>
   );
 };
 
 export default CardInfo;
+
 

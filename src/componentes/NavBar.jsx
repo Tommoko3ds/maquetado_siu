@@ -9,7 +9,7 @@ const NavBar = () => {
         alt="Logo"
         className="h-10 w-20 mr-2"
       />
-      <h1 className="text-2xl font-bold">Mi App</h1>
+      <h1 className="text-2xl font-bold">SGE</h1>
 
       {/* Secciones adicionales */}
       <div className="ml-auto flex space-x-4">

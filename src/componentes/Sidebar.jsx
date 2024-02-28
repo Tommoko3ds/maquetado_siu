@@ -3,8 +3,8 @@ import React from 'react';
 
 const Sidebar = ({ cards, onSelectCard }) => {
   return (
-    <div className="bg-gray-200 p-4 w-1/4 mb-10 ml-10"> {/* Agrega las clases 'mb-4' y 'ml-4' */}
-      <h2 className="text-xl font-bold mb-4">Cards</h2>
+    <div className="bg-gray-200 p-4 w-1/4 mb-10 ml-10 border border-black"> {/* Agrega las clases 'mb-4' y 'ml-4' */}
+      <h2 className="text-xl font-bold mb-4">Asesores</h2>
 
       <div className="space-y-4">
         {cards.map((card) => (
