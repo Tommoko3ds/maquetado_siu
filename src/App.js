@@ -1,4 +1,4 @@
-// src/App.js
+
 import React, { useState } from 'react';
 import NavBar from './componentes/NavBar';
 import Sidebar from './componentes/Sidebar';
@@ -32,3 +32,4 @@ const App = () => {
 };
 
 export default App;
+
